@@ -1,0 +1,221 @@
+body {
+  font-family: "Montserrat";
+  padding: 24px;
+}
+
+.quote-container {
+  border-top: 3px solid #2ba84a;
+  margin: 24px auto 0 auto;
+  border-radius: 0px 0px 3px 3px;
+  padding: 24px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+.quote-container > a {
+  color: teal;
+  position: unset;
+}
+
+.quote-container > blockquote {
+  line-height: 1.5;
+  font-weight: 300;
+  color: #808080;
+  margin: unset;
+  margin-top: 18px;
+  font-size: 16px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.quote-container > blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.quote-container > blockquote:after {
+  color: #ccc;
+  content: "\201D";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.6em;
+}
+
+.quote-container > cite {
+  margin-top: 18px;
+  display: block;
+  text-align: right;
+}
+
+.user-story {
+  margin-top: 24px;
+  border-radius: 0px 0px 3px 3px;
+  padding: 24px;
+  max-width: 400px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.18);
+}
+
+.user-story > .image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.user-story > .image-wrapper > img {
+  box-sizing: border-box;
+  border-radius: 100px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.user-story:nth-child(10) {
+  border-top: 3px solid #2ba84a;
+}
+
+.user-story:nth-child(10) > .image-wrapper > img {
+  border: 3px solid #2ba84a;
+}
+
+.user-story:nth-child(1) {
+  border-top: 3px solid #55d6be;
+}
+
+.user-story:nth-child(1) > .image-wrapper > img {
+  border: 3px solid #55d6be;
+}
+
+.user-story:nth-child(2) {
+  border-top: 3px solid #7d5ba6;
+}
+
+.user-story:nth-child(2) > .image-wrapper > img {
+  border: 3px solid #7d5ba6;
+}
+
+.user-story:nth-child(3) {
+  border-top: 3px solid #048ba8;
+}
+
+.user-story:nth-child(3) > .image-wrapper > img {
+  border: 3px solid #048ba8;
+}
+
+.user-story:nth-child(4) {
+  border-top: 3px solid #f00699;
+}
+
+.user-story:nth-child(4) > .image-wrapper > img {
+  border: 3px solid #f00699;
+}
+
+.user-story:nth-child(5) {
+  border-top: 3px solid #018e42;
+}
+
+.user-story:nth-child(5) > .image-wrapper > img {
+  border: 3px solid #018e42;
+}
+
+.user-story:nth-child(6) {
+  border-top: 3px solid #0b032d;
+}
+
+.user-story:nth-child(6) > .image-wrapper > img {
+  border: 3px solid #0b032d;
+}
+
+.user-story:nth-child(7) {
+  border-top: 3px solid #fff07c;
+}
+
+.user-story:nth-child(7) > .image-wrapper > img {
+  border: 3px solid #fff07c;
+}
+
+.user-story:nth-child(8) {
+  border-top: 3px solid #ff220c;
+}
+
+.user-story:nth-child(8) > .image-wrapper > img {
+  border: 3px solid #ff220c;
+}
+
+.user-story:nth-child(9) {
+  border-top: 3px solid #ea9010;
+}
+
+.user-story:nth-child(9) > .image-wrapper > img {
+  border: 3px solid #ea9010;
+}
+
+.user-story > blockquote {
+  line-height: 1.5;
+  font-weight: 300;
+  color: #808080;
+  margin: unset;
+  margin-top: 18px;
+  font-size: 16px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.user-story > blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+.user-story > blockquote:after {
+  color: #ccc;
+  content: "\201D";
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.6em;
+}
+
+.user-story > cite {
+  margin-top: 18px;
+  display: block;
+  text-align: right;
+}
+
+.user-stories-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+pre {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  font-family: Courier, "New Courier", monospace;
+  font-size: 12px;
+}
+
+#codeStyler {
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  margin: 1em 0;
+}
+
+.computerGreen {
+  border-radius: 3px;
+  background-color: #000000;
+  color: green;
+}
