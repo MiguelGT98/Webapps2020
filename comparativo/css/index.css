@@ -1,0 +1,56 @@
+div.container {
+  overflow: scroll;
+  max-height: 800px;
+}
+
+thead th {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky !important;
+  top: 0;
+}
+
+thead th:first-child {
+  left: 0;
+  z-index: 1;
+}
+
+tbody td:first-child {
+  position: -webkit-sticky; /* for Safari */
+  position: sticky;
+  left: 0;
+}
+
+table {
+  background-color: white;
+  border-radius: 5px;
+  color: #4a4a4a;
+  overflow: hidden;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+table > thead th {
+  overflow: hidden;
+  color: #212121;
+  background-color: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  padding: 18px 12px;
+  text-align: left;
+}
+
+table > tbody > tr > td {
+  padding: 18px 12px;
+  color: #4a4a4a;
+  background-color: #fff;
+}
+
+table > tbody tr:nth-child(even) td {
+  background-color: #eee;
+}
+
+ul > li {
+  margin-bottom: 0.5rem;
+}
