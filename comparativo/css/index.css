@@ -52,7 +52,3 @@ table > tbody > tr > td {
 table > tbody tr:nth-child(even) td {
   background-color: #eee;
 }
-
-ul > li {
-  margin-bottom: 0.5rem;
-}

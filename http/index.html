@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="../css/index.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap"
       rel="stylesheet"
@@ -17,11 +18,71 @@
         <span>José Miguel Gallardo Tabares</span>
         <span>A01336430</span>
       </div>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Menú</a></li>
+        </ul>
+      </nav>
     </header>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Menú</a></li>
-      </ul>
-    </nav>
+    <h1>Protocolo HTTP</h1>
+    <p>
+      El protocolo HTTP (Hypertext Transfer Protocol) es un protocolo usado para
+      transmitir documentos hipermedia estableciendo una comunicación entre
+      navegadores web y servidores web, por lo tanto, sigue el modelo
+      cliente-servidor.
+    </p>
+    <h2>Cliente-Servidor</h2>
+    <p>
+      Los clientes y servidores se comunican utilizando mensajes individuales,
+      que si provienen del navegador se llaman peticiones y si originan del
+      servidor se llaman respuestas.
+    </p>
+    <h2>Mensajes de HTTP</h2>
+    <p>
+      Como se mencionó anteriormente, existen dos tipos de mensajes HTTP:
+      peticiones y respuestas, las cuales cuentan con una estructura propia.
+    </p>
+    <h3>Peticiones</h3>
+    <img src="../images/HTTP_Request.png" />
+    <h3>Respuestas</h3>
+    <img src="../images/HTTP_Response.png" />
+    <p>
+      Por diseño, HTTP no mantiene un estado, es decir: No hay ninguna relación
+      entre alguna serie de peticiones enviadas durante una misma conexión. Si
+      se requiere mantener un estado o un contexto para distintas peticiones, se
+      pueden utilizar Cookies de HTTP.
+    </p>
+    <h2>Cookies HTTP</h2>
+    <p>
+      Las cookies son una pieza pequeña de datos que un servidor envía al
+      navegador, quien puede elegir almacenarla y utilizarla en futuras
+      peticiones al servidor. Usualmente son utilizadas para implementar
+      autenticación o averiguar si distintas peticiones provienen del mismo
+      navegador.
+    </p>
+    <p>
+      Recientemente, las cookies se utilizan por distintos sitios para
+      personalizar contenido de acuerdo al usuario o para mantener un rastreo y
+      análisis del usuario y de cómo interactúa con el sitio web.
+    </p>
+
+    <h2>Referencias</h2>
+    <ul class="bibliography">
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP"
+          >https://developer.mozilla.org/en-US/docs/Web/HTTP</a
+        >
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
+          >https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview</a
+        >
+      </li>
+      <li>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies"
+          >https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a
+        >
+      </li>
+    </ul>
   </body>
 </html>
