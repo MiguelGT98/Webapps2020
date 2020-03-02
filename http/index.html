@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +13,7 @@
   </head>
   <body>
     <header>
-      <img src="../images/tec-logo.png" />
+      <img src="../images/tec-logo.png" alt="Logo Tec" />
       <div>
         <span>José Miguel Gallardo Tabares</span>
         <span>A01336430</span>
@@ -43,9 +43,23 @@
       peticiones y respuestas, las cuales cuentan con una estructura propia.
     </p>
     <h3>Peticiones</h3>
-    <img src="../images/HTTP_Request.png" />
+    <img src="../images/HTTP_Request.png" alt="Detalles de HTTP Request" />
+    <h4>Métodos HTTP</h4>
+    <p>Los métodos más utilizados son:</p>
+    <ul>
+      <li>
+        <strong>GET</strong> Pide una representación de un recurso en
+        específico, estas peticiones deberían solo regresar datos.
+      </li>
+      <li>
+        <strong>POST</strong> Es usado para subir una entidad o ciertos datos al
+        recurso específicado.
+      </li>
+      <li><strong>DELETE</strong> Borra el recurso especificado.</li>
+      <li><strong>PATCH</strong> Es usado para aplicar cambios al recurso.</li>
+    </ul>
     <h3>Respuestas</h3>
-    <img src="../images/HTTP_Response.png" />
+    <img src="../images/HTTP_Response.png" alt="Detalles de HTTP Response" />
     <p>
       Por diseño, HTTP no mantiene un estado, es decir: No hay ninguna relación
       entre alguna serie de peticiones enviadas durante una misma conexión. Si
@@ -65,24 +79,38 @@
       personalizar contenido de acuerdo al usuario o para mantener un rastreo y
       análisis del usuario y de cómo interactúa con el sitio web.
     </p>
-
     <h2>Referencias</h2>
     <ul class="bibliography">
       <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP"
-          >https://developer.mozilla.org/en-US/docs/Web/HTTP</a
+        HTTP. (2020). Recuperado el 2 de marzo de 2020 de sitio web:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP">
+          https://developer.mozilla.org/en-US/docs/Web/HTTP</a
         >
       </li>
       <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview"
-          >https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview</a
+        HTTP OVERVIEW. (2020). Recuperado el 2 de marzo de 2020 de sitio web:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview">
+          https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview</a
         >
       </li>
       <li>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies"
-          >https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a
+        HTTP METHODS. (2020). Recuperado el 2 de marzo de 2020 de sitio web:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods">
+          https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods</a
+        >
+      </li>
+      <li>
+        HTTP COOKIES. (2020). Recuperado el 2 de marzo de 2020 de sitio web:
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies">
+          https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a
         >
       </li>
     </ul>
+    <h2>W3C Validator</h2>
+    <img
+      class="screenshot"
+      src="../images/validator_http.png"
+      alt="Captura de pantalla W3C validator"
+    />
   </body>
 </html>
