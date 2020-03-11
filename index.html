@@ -3,39 +3,103 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./css/index.css" rel="stylesheet" />
+    <title>Tarea 3</title>
+    <link rel="stylesheet" href="./css/index.css" />
     <link
-      href="https://fonts.googleapis.com/css?family=Poppins:300,400,700&display=swap"
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap"
       rel="stylesheet"
     />
-    <title>Menú</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <img src="./images/tec-logo.png" alt="Logo Tec" />
-      <div>
-        <span>José Miguel Gallardo Tabares</span>
-        <span>A01336430</span>
+    <div class="input">
+      <input type="email" /><button>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path
+            class="heroicon-ui"
+            d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"
+          />
+        </svg>
+      </button>
+    </div>
+    <div class="table-container">
+      <div class="table">
+        <div class="table-header">
+          <div class="table-row">
+            <span class="table-head">Nombre</span
+            ><span class="table-head">Apellido Paterno</span
+            ><span class="table-head">Apellido Materno</span>
+            <span class="table-head">Email</span
+            ><span class="table-cell">Fotografía</span
+            ><span class="table-head">Celular</span>
+          </div>
+        </div>
+        <div class="table-body">
+          <div class="table-row">
+            <span class="table-cell">Manuel</span
+            ><span class="table-cell">Ibañez</span
+            ><span class="table-cell">Galicia</span>
+            <span class="table-cell">m.galicia@hotmail.com</span
+            ><span class="table-cell"
+              ><span class="image">
+                <img
+                  alt="Profile image"
+                  src="https://krausefx.com/assets/posts/profilePictures/FelixKrause2014.jpg"/></span></span
+            ><span class="table-cell">(55) 27890704</span>
+          </div>
+          <div class="table-row">
+            <span class="table-cell">Ellen</span
+            ><span class="table-cell">Ødegaard</span
+            ><span class="table-cell">Nuñez</span>
+            <span class="table-cell">pinkprincess@gmail.com</span
+            ><span class="table-cell"
+              ><span class="image">
+                <img
+                  alt="Profile image"
+                  src="https://i.ytimg.com/vi/7Xu_s1YJhyg/maxresdefault.jpg"/></span></span
+            ><span class="table-cell">(55) 57814564</span>
+          </div>
+          <div class="table-row">
+            <span class="table-cell">Julieta</span
+            ><span class="table-cell">Muñoz</span
+            ><span class="table-cell">González</span>
+            <span class="table-cell">jmuñoz@live.com</span
+            ><span class="table-cell"
+              ><span class="image">
+                <img
+                  alt="Profile image"
+                  src="https://mobirise.com/bootstrap-template/profile-template/assets/images/timothy-paul-smith-256424-1200x800.jpg"/></span></span
+            ><span class="table-cell">(55) 44567892</span>
+          </div>
+          <div class="table-row">
+            <span class="table-cell">Alejandro</span
+            ><span class="table-cell">Cervantes</span
+            ><span class="table-cell">Gallegos</span>
+            <span class="table-cell">dragonking@gmail.com</span
+            ><span class="table-cell"
+              ><span class="image">
+                <img
+                  alt="Profile image"
+                  src="https://images.unsplash.com/photo-1518806118471-f28b20a1d79d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"/></span
+            ></span>
+            <span class="table-cell">(55) 62835103</span>
+          </div>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="./index.html">Menú</a></li>
-          <li><a href="./historia/index.html">Historia</a></li>
-          <li><a href="./http/index.html">HTTP</a></li>
-          <li><a href="./comparativo/index.html">Comparativo</a></li>
-        </ul>
-      </nav>
-    </header>
-    <h1>Página de inicio</h1>
-    <p>
-      Presione los enlaces del header para poder navegar por las distintas
-      páginas.
-    </p>
-    <h2>W3C Validator</h2>
-    <img
-      class="screenshot"
-      src="./images/validator_inicio.png"
-      alt="Captura de pantalla W3C validator"
-    />
+    </div>
+    <div class="input">
+      <label>Nombre (Máximo 10 caracteres)</label>
+      <input class="text" type="text" maxlength="10" />
+      <span class="circle yellow" title="Some tag"></span
+      ><span class="circle black"></span>
+    </div>
   </body>
 </html>
