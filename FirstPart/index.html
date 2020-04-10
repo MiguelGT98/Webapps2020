@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tarea 4</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./lib/BinarySearch.js"></script>
+  </head>
+  <body>
+    <form class="input" id="search-form">
+      <input type="text" id="searchbar" /><button type="submit">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="24"
+          height="24"
+        >
+          <path
+            class="heroicon-ui"
+            d="M18.59 13H3a1 1 0 0 1 0-2h15.59l-5.3-5.3a1 1 0 1 1 1.42-1.4l7 7a1 1 0 0 1 0 1.4l-7 7a1 1 0 0 1-1.42-1.4l5.3-5.3z"
+          />
+        </svg>
+      </button>
+    </form>
+    <div class="table-container">
+      <div class="table">
+        <div class="table-header">
+          <div class="table-row">
+            <span class="table-head">Nombre</span
+            ><span class="table-head">Apellido Paterno</span
+            ><span class="table-head">Apellido Materno</span>
+            <span class="table-head">Email</span
+            ><span class="table-cell">Fotografía</span
+            ><span class="table-head">Celular</span>
+          </div>
+        </div>
+        <div class="table-body" id="table-body"></div>
+      </div>
+    </div>
+  </body>
+</html>
