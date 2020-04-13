@@ -68,13 +68,22 @@ async function morseCodeProgression(text, timeBetweenDigit, timeBetweenLetters, 
             span.innerHTML = code[j];
             outerSpan.appendChild(span);
             index++;
-            if (code[j] === "·")
+            if (code[j] === "·") {
                 lightbulb.classList.add("dot");
-            if (code[j] === "-")
+                await sleep(200).then(() => {
+                    lightbulb.classList.remove("dot");
+                    lightbulb.classList.remove("line");
+                    return sleep(timeBetweenDigit);
+                });
+            }
+            if (code[j] === "-") {
                 lightbulb.classList.add("line");
-            await sleep(timeBetweenDigit);
-            lightbulb.classList.remove("dot");
-            lightbulb.classList.remove("line");
+                await sleep(600).then(() => {
+                    lightbulb.classList.remove("dot");
+                    lightbulb.classList.remove("line");
+                    return sleep(timeBetweenDigit);
+                });
+            }
         }
         await sleep(timeBetweenLetters);
     }

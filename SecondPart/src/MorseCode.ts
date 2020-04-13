@@ -87,13 +87,24 @@ async function morseCodeProgression(
       outerSpan.appendChild(span);
       index++;
 
-      if (code[j] === "·") lightbulb.classList.add("dot");
-      if (code[j] === "-") lightbulb.classList.add("line");
+      if (code[j] === "·") {
+        lightbulb.classList.add("dot");
 
-      await sleep(timeBetweenDigit);
+        await sleep(200).then(() => {
+          lightbulb.classList.remove("dot");
+          lightbulb.classList.remove("line");
+          return sleep(timeBetweenDigit);
+        });
+      }
+      if (code[j] === "-") {
+        lightbulb.classList.add("line");
 
-      lightbulb.classList.remove("dot");
-      lightbulb.classList.remove("line");
+        await sleep(600).then(() => {
+          lightbulb.classList.remove("dot");
+          lightbulb.classList.remove("line");
+          return sleep(timeBetweenDigit);
+        });
+      }
     }
 
     await sleep(timeBetweenLetters);
